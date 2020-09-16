@@ -11,7 +11,7 @@ pip install cookiecutter
 before you run the following line in the folder you want you project folder to be stored in.
 
 ```bash
-cookiecutter gh:/yngvem/fenics-cookiecutter
+cookiecutter gh:yngvem/fenics-cookiecutter
 ```
 
 Then, open that folder in VSCode, press the little green button on the lower left corner and select "Remote-containers: Reopen in container". This should build the Docker image and mount the container.
