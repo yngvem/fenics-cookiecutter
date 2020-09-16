@@ -1,6 +1,21 @@
 # Cookiecutter template for projects using FEniCS
 This is a template to create FEniCS driven applications and libraries.
 
+## How to use
+Install VSCode with the *Python*, *Remote Containers* and *Docker* plugins. Then, install cookiecutter by running
+
+```bash
+pip install cookiecutter
+```
+
+before you run the following line in the folder you want you project folder to be stored in.
+
+```bash
+cookiecutter gh:/yngvem/fenics-cookiecutter
+```
+
+Then, open that folder in VSCode, press the little green button on the lower left corner and select "Remote-containers: Reopen in container". This should build the Docker image and mount the container.
+
 ## About
 This cookiecutter template will create a folder with a VSCode-friendly development Docker container. In the .devcontainer folder, there is a Dockerfile that bootstraps the official FEniCS image, and installs the following libraries:
 
