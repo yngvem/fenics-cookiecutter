@@ -7,6 +7,9 @@ RUN pip install --upgrade -r /tmp/requirements.txt
 RUN pip install --upgrade -r /tmp/requirements-upgrade.txt
 RUN rm /tmp/requirements.txt
 RUN rm /tmp/requirements-upgrade.txt
+RUN apt upgrade -y
+RUN apt update -y
+RUN apt install -y gmsh
 
 # Install jupyter
 RUN pip install --upgrade jupyter_contrib_nbextensions jupyter_nbextensions_configurator
