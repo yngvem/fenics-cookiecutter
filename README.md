@@ -41,6 +41,9 @@ This cookiecutter template will create a folder with a VSCode-friendly developme
  * jupyter_contrib_nbextensions
  * jupyter_nbextensions_configurator
 
+### Other programs (in .devcontainer/Dockerfile)
+ * gmsh (meshing)
+
 The Notebook plugins are also activated.
 
 Then, when the Docker image is built, VScode will start a container, while forwarding the ports specified when running cookiecutter. Then, it will mount the project directory and install the code in [editable mode](https://packaging.python.org/guides/distributing-packages-using-setuptools/#working-in-development-mode). The library will by default have the following dependencies which then will be installed too
@@ -51,6 +54,9 @@ Then, when the Docker image is built, VScode will start a container, while forwa
  * numpy (multidimensional arrays)
  * scipy (scientific code)
  * matplotlib (plotting)
+ * h5py (storing data in binary files)
+ * pygmsh (gmsh interface from python)
+ * meshio (loading mesh files)
 
 ## Adding new libraries
 Any additional libraries you use in the src/ folder should be added to setup.cfg and any you use in the notebooks, scripts, test and documentation folders should be added to requirements.txt. For more information about structuring dependencies, see [this tutorial](https://github.com/yngvem/python-project-structure).
